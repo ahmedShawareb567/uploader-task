@@ -1,0 +1,31 @@
+.modalDialog {
+  z-index: 9999;
+  &-content {
+    @apply w-full max-w-full overflow-y-auto;
+    max-height: 80vh;
+
+    &.sm {
+      @screen md {
+        width: 500px;
+      }
+    }
+
+    &.md {
+      @screen md {
+        width: 600px;
+      }
+    }
+
+    &.lg {
+      @screen md {
+        width: 800px;
+      }
+    }
+
+    &.xl {
+      @screen md {
+        width: 1000px;
+      }
+    }
+  }
+}
